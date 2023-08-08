@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/ppticon.svg">
+    <title>Piedra, Papel o Tijeras</title>
+</head>
+
+<body>
+
+<header>
+    <h1>PIEDRA, PAPEL O TIJERAS</h1>
+</header>
+
+<section class="result_container">
+    <div class="result">
+        <h2 id="result"></h2>
+    </div>
+</section>
+
+<section class="score_container">
+
+    <div class="choice_img">
+        <h2>JUGADOR</h2>
+        <div class="choice_container" id="user_choice">
+
+        </div>
+    </div>
+    
+    <div class="score_and_button">
+        <div class="score">
+            <span id="user_score">0</span>
+            <span id="cpu_score">0</span>
+        </div>
+        <button id ="restart"><img src="assets/img/Restart.svg" alt="Restart Button"></button>
+    </div>
+    
+
+    <div class="choice_img">
+        <h2>CPU</h2>
+        <div class="choice_container" id="cpu_choice">
+
+        </div>
+    </div>
+
+</section>
+
+<section class="options_container">
+    <div class="options">
+        <button id="rock"><img src="assets/img/rock.png" alt="Rock Option"></button>
+        <button id="paper"><img src="assets/img/paper.png" alt="Paper Option"></button>
+        <button id="scissors"><img src="assets/img/scissors.png" alt="Scissors Option"></button>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+    
+</body>
+
+</html>

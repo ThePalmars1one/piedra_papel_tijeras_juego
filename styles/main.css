@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient-green: #9DF4EB;
+    --gradient-blue: #0093E9;
+}
+
+@font-face {
+    font-family: 'Hands';
+    src: url('../assets/fonts/KGRedHands.ttf');
+}
+
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: 'Hands', sans-serif;
+}
+
+header{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.result_container{
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+}
+
+
+.score_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choice_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 315px;
+    background: var(--gradient-green);
+    border-radius: 50px;
+}
+
+.scale-animation {
+    animation: scale 0.5s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 140px;
+    height: 50px;
+    background: var(--gradient-green);
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.score::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: black;
+}
+
+.score_and_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_and_button button img{
+    width: 50px;
+    height: 50px;
+}
+
+.score_and_button button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.choice_img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.choice_img h2{
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.options_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.options button img{
+    width: 70px;
+    height: 70px;
+}
+
+.options button{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.options button:hover{
+    background: var(--gradient-blue);
+}
+
+@media screen and (max-width: 650px) {
+
+    .score_container{
+        flex-direction: column;
+    }
+
+    .result{
+        margin-bottom: 1rem;
+    }
+
+    .score_and_button{
+        margin: 1rem 0;
+    }
+
+    .choice_container{
+        width: 200px;
+        height: 215px;
+    }
+
+   
+}
+
+
